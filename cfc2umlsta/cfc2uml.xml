@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<primitives>
+	<primitive id="_U-YvkPR8Ed6NwpmnSdyTVA" name="any"/>
+	<primitive id="_IrzuMPR9Ed6NwpmnSdyTVA" name="array"/>
+	<primitive id="_I-gnwPR9Ed6NwpmnSdyTVA" name="binary"/>
+	<primitive id="_JFR-IPR9Ed6NwpmnSdyTVA" name="boolean"/>
+	<primitive id="_JO5NIPR9Ed6NwpmnSdyTVA" name="cfc"/>
+	<primitive id="_JU_1IPR9Ed6NwpmnSdyTVA" name="date"/>
+	<primitive id="_DT_1IPR9Ed6NwpmnSdyTVA" name="datetime"/>
+	<primitive id="_Ja3zoPR9Ed6NwpmnSdyTVA" name="guid"/>
+	<primitive id="_I-msoPR9Ed6NwpmnSdyTVA" name="int"/>
+	<primitive id="_Jgq5oPR9Ed6NwpmnSdyTVA" name="numeric"/>
+	<primitive id="_eG3hkPR9Ed6NwpmnSdyTVA" name="query"/>
+	<primitive id="_eOWCkPR9Ed6NwpmnSdyTVA" name="string"/>
+	<primitive id="_eUS5kPR9Ed6NwpmnSdyTVA" name="struct"/>
+	<primitive id="_eZj0EPR9Ed6NwpmnSdyTVA" name="uuid"/>
+	<primitive id="_eehMkPR9Ed6NwpmnSdyTVA" name="xml"/>
+</primitives>

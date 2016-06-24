@@ -1,0 +1,54 @@
+<application>
+
+	<name>CFC2UML</name>
+	<author>Marko Simic</author>
+	<version>0.5</version>
+	<email>marko.simic@gmail.com</email>	
+	<description>
+		<![CDATA[
+		Translate component's metadata in to XML format following XMI schema (2.1).
+		As such, you can import it in any UML Modeling Tool which supports this standard.<br/>
+		Enjoy CF fellas!
+		]]>
+	</description>	
+	<license>
+		<![CDATA[
+		You can use this extension without any obligation, but please:<br/>
+		a) Specify return and argument types, when declaring a function, whenever possible<br/>
+		b) Post bug report when you see one
+		]]>
+	</license>
+	
+    <menucontributions>
+		<contribution target="projectview">
+			<menu name="Generate UML">
+				<filters>
+					<filter type="folder" />
+					<filter type="file" pattern=".*?\.cfc"/>
+				</filters>
+	    		<action name="CFC2UML" handlerid="translate" showResponse="true">
+					<dialog height="300" width="600" title="CFC2UML" image="handlers/cu_ico.png">
+						<input 
+							name="saveloc" 
+    						label="Save to: " 
+    						tooltip="Specify file name where you want to store UML model file"
+							helpmessage="Specify file name where you want to store UML model file. If you leave it empty, autogenerate will be assumed." 
+    						type="file"/> 
+						<input
+							name="autogenerate"
+							label="Autogenerate: " 
+							helpmessage="Single CFC selected: &lt;cfc_file_name&gt;.uml; Folder: &lt;createUUID()&gt;.uml. If it is checked, file location will be ignored."
+							type="boolean"
+							checked="true"/>
+					</dialog>  
+				</action>
+			</menu>
+		</contribution>
+
+    </menucontributions>	
+
+	<handlers>
+		<handler id="translate" type="CFM" filename="translate.cfm" />
+	</handlers>
+
+</application>
